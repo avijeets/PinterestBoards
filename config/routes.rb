@@ -1,10 +1,6 @@
 Pinteresting::Application.routes.draw do
-  resources :pins
-
-  devise_for :users
   root "pages#home"
   get "about" => "pages#about"
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -45,7 +41,7 @@ Pinteresting::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
