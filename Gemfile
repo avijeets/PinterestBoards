@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'devise'
 gem 'rails', '4.0.3'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
@@ -14,11 +15,16 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development, :test do
-     gem 'sqlite3'
+
+group :production, :staging do
+  gem "pg"
 end
 
+group :development, :test do
+  gem "sqlite3-ruby", "~> 1.3.0", :require => "sqlite3"
+end
+
+
 group :production do
-     gem 'pg'
      gem 'rails_12factor'
 end
