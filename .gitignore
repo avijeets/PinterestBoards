@@ -18,3 +18,6 @@
 #Ignore SSH Key files
 /id_rsa
 /id_rsa.pub
+
+#Chill with that devise shit
+config/initializers/devise.rb
