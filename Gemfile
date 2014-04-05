@@ -15,10 +15,6 @@ group :doc do
 end
 
 
-group :production, :staging do
-  gem "pg"
-end
-
 
 group :development, :test do
      gem 'sqlite3'
